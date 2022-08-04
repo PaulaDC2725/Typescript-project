@@ -1,14 +1,10 @@
 
 export class MyDate{
-  year: number;
-  month: number;
-  day: number;
 
-  constructor(year: number,month: number,day: number){
-    this.year= year;
-    this.month =month;
-    this.day = day;
-  }
+  constructor(public year: number,
+   public month: number,
+   private day: number
+   ){}
 
   printFormat(): string{
     return `${this.day}/${this.month}/${this.year}`;
@@ -154,6 +150,5 @@ const myDate3 = new MyDate(2020,2,25);
 myDate3.add(10,'years');
 
 console.log('Mi fecha final3 es: ', myDate3.printFormat());
-console.log(myDate.day);
 console.log(myDate.month);
 console.log(myDate.year);
