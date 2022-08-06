@@ -13,7 +13,7 @@ console.log(productService.getAll());
 
 const products = productService.getAll();
 const productId = products[0].id;
-productService.updateProduct(productId,{
+productService.update(productId,{
   title: 'Cambiar nombre',
 });
 const rta = productService.findOne(productId);
